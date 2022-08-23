@@ -3,7 +3,7 @@ SPMV/spmv_baseline.zip
 SPMV/spmv_partially_unroll.zip
 SPMV/spmv_baseline
 SPMV/spmv_partially_unroll
-cordic/lab_cordic
-cordic/lab_cordic_1
-cordic/lab_cordic.zip
-cordic/code解說.pdf
+cordic_vitis/lab_cordic
+cordic_vitis/lab_cordic_1
+cordic_vitis/lab_cordic.zip
+cordic_vitis/code解說.pdf
