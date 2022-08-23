@@ -1,0 +1,127 @@
+
+
+================================================================
+== Synthesis Summary Report of 'histogram'
+================================================================
++ General Information: 
+    * Date:           Thu Jun  9 19:58:59 2022
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+    * Project:        Prefix
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |                        Modules                        | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |    |           |           |     |
+    |                        & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF    |    LUT    | URAM|
+    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+    |+ histogram*                                           |     -|  1.49|     1066|  1.066e+04|         -|     1067|     -|  dataflow|  8 (2%)|   -|  425 (~0%)|   903 (1%)|    -|
+    | + grp_histogram_map3_fu_40                            |     -|  1.57|     1066|  1.066e+04|         -|     1066|     -|        no|       -|   -|  178 (~0%)|  383 (~0%)|    -|
+    |  + grp_histogram_map3_Pipeline_VITIS_LOOP_4_1_fu_57   |     -|  2.28|      546|  5.460e+03|         -|      546|     -|        no|       -|   -|   12 (~0%)|   51 (~0%)|    -|
+    |   o VITIS_LOOP_4_1                                    |     -|  7.30|      544|  5.440e+03|         1|        1|   544|       yes|       -|   -|          -|          -|    -|
+    |  + grp_histogram_map3_Pipeline_VITIS_LOOP_10_2_fu_63  |     -|  1.57|      516|  5.160e+03|         -|      516|     -|        no|       -|   -|  116 (~0%)|  173 (~0%)|    -|
+    |   o VITIS_LOOP_10_2                                   |     -|  7.30|      514|  5.140e+03|         4|        1|   512|       yes|       -|   -|          -|          -|    -|
+    | + grp_histogram_map_fu_48                             |     -|  1.57|     1066|  1.066e+04|         -|     1066|     -|        no|       -|   -|  178 (~0%)|  383 (~0%)|    -|
+    |  + grp_histogram_map_Pipeline_VITIS_LOOP_4_1_fu_57    |     -|  2.28|      546|  5.460e+03|         -|      546|     -|        no|       -|   -|   12 (~0%)|   51 (~0%)|    -|
+    |   o VITIS_LOOP_4_1                                    |     -|  7.30|      544|  5.440e+03|         1|        1|   544|       yes|       -|   -|          -|          -|    -|
+    |  + grp_histogram_map_Pipeline_VITIS_LOOP_10_2_fu_63   |     -|  1.57|      516|  5.160e+03|         -|      516|     -|        no|       -|   -|  116 (~0%)|  173 (~0%)|    -|
+    |   o VITIS_LOOP_10_2                                   |     -|  7.30|      514|  5.140e+03|         4|        1|   512|       yes|       -|   -|          -|          -|    -|
+    | + grp_histogram_reduce_fu_56                          |     -|  1.49|      547|  5.470e+03|         -|      547|     -|        no|       -|   -|   67 (~0%)|  105 (~0%)|    -|
+    |  o VITIS_LOOP_25_1                                    |     -|  7.30|      545|  5.450e+03|         3|        1|   544|       yes|       -|   -|          -|          -|    -|
+    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-----------------+----------+
+| Interface       | Bitwidth |
++-----------------+----------+
+| hist_address0   | 10       |
+| hist_address1   | 10       |
+| hist_d0         | 32       |
+| hist_d1         | 32       |
+| hist_q0         | 32       |
+| hist_q1         | 32       |
+| inputA_address0 | 9        |
+| inputA_address1 | 9        |
+| inputA_d0       | 32       |
+| inputA_d1       | 32       |
+| inputA_q0       | 32       |
+| inputA_q1       | 32       |
+| inputB_address0 | 9        |
+| inputB_address1 | 9        |
+| inputB_d0       | 32       |
+| inputB_d1       | 32       |
+| inputB_q0       | 32       |
+| inputB_q1       | 32       |
++-----------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| inputA   | in        | int*     |
+| inputB   | in        | int*     |
+| hist     | out       | int*     |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+-----------------+---------+----------+
+| Argument | HW Name         | HW Type | HW Usage |
++----------+-----------------+---------+----------+
+| inputA   | inputA_address0 | port    | offset   |
+| inputA   | inputA_ce0      | port    |          |
+| inputA   | inputA_d0       | port    |          |
+| inputA   | inputA_q0       | port    |          |
+| inputA   | inputA_we0      | port    |          |
+| inputA   | inputA_address1 | port    | offset   |
+| inputA   | inputA_ce1      | port    |          |
+| inputA   | inputA_d1       | port    |          |
+| inputA   | inputA_q1       | port    |          |
+| inputA   | inputA_we1      | port    |          |
+| inputB   | inputB_address0 | port    | offset   |
+| inputB   | inputB_ce0      | port    |          |
+| inputB   | inputB_d0       | port    |          |
+| inputB   | inputB_q0       | port    |          |
+| inputB   | inputB_we0      | port    |          |
+| inputB   | inputB_address1 | port    | offset   |
+| inputB   | inputB_ce1      | port    |          |
+| inputB   | inputB_d1       | port    |          |
+| inputB   | inputB_q1       | port    |          |
+| inputB   | inputB_we1      | port    |          |
+| hist     | hist_address0   | port    | offset   |
+| hist     | hist_ce0        | port    |          |
+| hist     | hist_d0         | port    |          |
+| hist     | hist_q0         | port    |          |
+| hist     | hist_we0        | port    |          |
+| hist     | hist_address1   | port    | offset   |
+| hist     | hist_ce1        | port    |          |
+| hist     | hist_d1         | port    |          |
+| hist     | hist_q1         | port    |          |
+| hist     | hist_we1        | port    |          |
++----------+-----------------+---------+----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+

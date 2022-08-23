@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vitis HLS Report for 'histogram_reduce'
+================================================================
+* Date:           Thu Jun  9 19:58:57 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+* Project:        Prefix
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.806 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      547|      547|  5.470 us|  5.470 us|  547|  547|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_25_1  |      545|      545|         3|          1|          1|   544|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.35>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %hist, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (1.58ns)   --->   "%store_ln25 = store i10 0, i10 %i" [histogram_parallel.cpp:25]   --->   Operation 8 'store' 'store_ln25' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%br_ln25 = br void" [histogram_parallel.cpp:25]   --->   Operation 9 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%i_1 = load i10 %i" [histogram_parallel.cpp:25]   --->   Operation 10 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.77ns)   --->   "%icmp_ln25 = icmp_eq  i10 %i_1, i10 544" [histogram_parallel.cpp:25]   --->   Operation 11 'icmp' 'icmp_ln25' <Predicate = true> <Delay = 1.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 544, i64 544, i64 544"   --->   Operation 12 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.73ns)   --->   "%add_ln25 = add i10 %i_1, i10 1" [histogram_parallel.cpp:25]   --->   Operation 13 'add' 'add_ln25' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln25 = br i1 %icmp_ln25, void %.split, void" [histogram_parallel.cpp:25]   --->   Operation 14 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln25 = zext i10 %i_1" [histogram_parallel.cpp:25]   --->   Operation 15 'zext' 'zext_ln25' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%hist1_addr = getelementptr i32 %hist1, i64 0, i64 %zext_ln25" [histogram_parallel.cpp:27]   --->   Operation 16 'getelementptr' 'hist1_addr' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (3.25ns)   --->   "%hist1_load = load i10 %hist1_addr" [histogram_parallel.cpp:27]   --->   Operation 17 'load' 'hist1_load' <Predicate = (!icmp_ln25)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%hist2_addr = getelementptr i32 %hist2, i64 0, i64 %zext_ln25" [histogram_parallel.cpp:27]   --->   Operation 18 'getelementptr' 'hist2_addr' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (3.25ns)   --->   "%hist2_load = load i10 %hist2_addr" [histogram_parallel.cpp:27]   --->   Operation 19 'load' 'hist2_load' <Predicate = (!icmp_ln25)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
+ST_1 : Operation 20 [1/1] (1.58ns)   --->   "%store_ln25 = store i10 %add_ln25, i10 %i" [histogram_parallel.cpp:25]   --->   Operation 20 'store' 'store_ln25' <Predicate = (!icmp_ln25)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 5.80>
+ST_2 : Operation 21 [1/2] (3.25ns)   --->   "%hist1_load = load i10 %hist1_addr" [histogram_parallel.cpp:27]   --->   Operation 21 'load' 'hist1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
+ST_2 : Operation 22 [1/2] (3.25ns)   --->   "%hist2_load = load i10 %hist2_addr" [histogram_parallel.cpp:27]   --->   Operation 22 'load' 'hist2_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
+ST_2 : Operation 23 [1/1] (2.55ns)   --->   "%add_ln27 = add i32 %hist2_load, i32 %hist1_load" [histogram_parallel.cpp:27]   --->   Operation 23 'add' 'add_ln27' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln29 = ret" [histogram_parallel.cpp:29]   --->   Operation 29 'ret' 'ret_ln29' <Predicate = (icmp_ln25)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specpipeline_ln25 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [histogram_parallel.cpp:25]   --->   Operation 24 'specpipeline' 'specpipeline_ln25' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln25 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [histogram_parallel.cpp:25]   --->   Operation 25 'specloopname' 'specloopname_ln25' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%hist_addr = getelementptr i32 %hist, i64 0, i64 %zext_ln25" [histogram_parallel.cpp:27]   --->   Operation 26 'getelementptr' 'hist_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (3.25ns)   --->   "%store_ln27 = store i32 %add_ln27, i10 %hist_addr" [histogram_parallel.cpp:27]   --->   Operation 27 'store' 'store_ln27' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 28 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.36ns
+The critical path consists of the following:
+	'alloca' operation ('i') [4]  (0 ns)
+	'load' operation ('i', histogram_parallel.cpp:25) on local variable 'i' [9]  (0 ns)
+	'add' operation ('add_ln25', histogram_parallel.cpp:25) [12]  (1.73 ns)
+	'store' operation ('store_ln25', histogram_parallel.cpp:25) of variable 'add_ln25', histogram_parallel.cpp:25 on local variable 'i' [25]  (1.59 ns)
+	blocking operation 0.0395 ns on control path)
+
+ <State 2>: 5.81ns
+The critical path consists of the following:
+	'load' operation ('hist1_load', histogram_parallel.cpp:27) on array 'hist1' [19]  (3.25 ns)
+	'add' operation ('add_ln27', histogram_parallel.cpp:27) [22]  (2.55 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('hist_addr', histogram_parallel.cpp:27) [23]  (0 ns)
+	'store' operation ('store_ln27', histogram_parallel.cpp:27) of variable 'add_ln27', histogram_parallel.cpp:27 on array 'hist' [24]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,586 @@
+
+
+================================================================
+== Vitis HLS Report for 'histogram'
+================================================================
+* Date:           Thu Jun  9 19:58:59 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+* Project:        Prefix
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.806 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     1066|     1066|  10.660 us|  10.660 us|  1067|  1067|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------+------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                     |                  |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |       Instance      |      Module      |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +---------------------+------------------+---------+---------+-----------+-----------+------+------+---------+
+        |histogram_map3_U0    |histogram_map3    |     1066|     1066|  10.660 us|  10.660 us|  1066|  1066|       no|
+        |histogram_map_U0     |histogram_map     |     1066|     1066|  10.660 us|  10.660 us|  1066|  1066|       no|
+        |histogram_reduce_U0  |histogram_reduce  |      547|      547|   5.470 us|   5.470 us|   547|   547|       no|
+        +---------------------+------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     14|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|     423|    871|    -|
+|Memory           |        8|    -|       0|      0|    0|
+|Multiplexer      |        -|    -|       -|     18|    -|
+|Register         |        -|    -|       2|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        8|    0|     425|    903|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------+------------------+---------+----+-----+-----+-----+
+    |       Instance      |      Module      | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------------+------------------+---------+----+-----+-----+-----+
+    |histogram_map_U0     |histogram_map     |        0|   0|  178|  383|    0|
+    |histogram_map3_U0    |histogram_map3    |        0|   0|  178|  383|    0|
+    |histogram_reduce_U0  |histogram_reduce  |        0|   0|   67|  105|    0|
+    +---------------------+------------------+---------+----+-----+-----+-----+
+    |Total                |                  |        0|   0|  423|  871|    0|
+    +---------------------+------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +---------+-------+---------+---+----+-----+------+-----+------+-------------+
+    |  Memory | Module| BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------+-------+---------+---+----+-----+------+-----+------+-------------+
+    |hist1_U  |hist1  |        4|  0|   0|    0|   544|   32|     1|        17408|
+    |hist2_U  |hist1  |        4|  0|   0|    0|   544|   32|     1|        17408|
+    +---------+-------+---------+---+----+-----+------+-----+------+-------------+
+    |Total    |       |        8|  0|   0|    0|  1088|   64|     2|        34816|
+    +---------+-------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------+----------+----+---+----+------------+------------+
+    |            Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                             |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                       |       and|   0|  0|   2|           1|           1|
+    |histogram_map3_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |histogram_map_U0_ap_start           |       and|   0|  0|   2|           1|           1|
+    |histogram_reduce_U0_ap_start        |       and|   0|  0|   2|           1|           1|
+    |ap_sync_histogram_map3_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_histogram_map_U0_ap_ready   |        or|   0|  0|   2|           1|           1|
+    +------------------------------------+----------+----+---+----+------------+------------+
+    |Total                               |          |   0|  0|  14|           7|           7|
+    +------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------+----+-----------+-----+-----------+
+    |                  Name                  | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_histogram_map3_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_histogram_map_U0_ap_ready   |   9|          2|    1|          2|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |Total                                   |  18|          4|    2|          4|
+    +----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+---+----+-----+-----------+
+    |                  Name                  | FF| LUT| Bits| Const Bits|
+    +----------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_histogram_map3_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_histogram_map_U0_ap_ready   |  1|   0|    1|          0|
+    +----------------------------------------+---+----+-----+-----------+
+    |Total                                   |  2|   0|    2|          0|
+    +----------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+--------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------+-----+-----+------------+--------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|     histogram|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|     histogram|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|     histogram|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|     histogram|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|     histogram|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|     histogram|  return value|
+|inputA_address0  |  out|    9|   ap_memory|        inputA|         array|
+|inputA_ce0       |  out|    1|   ap_memory|        inputA|         array|
+|inputA_d0        |  out|   32|   ap_memory|        inputA|         array|
+|inputA_q0        |   in|   32|   ap_memory|        inputA|         array|
+|inputA_we0       |  out|    1|   ap_memory|        inputA|         array|
+|inputA_address1  |  out|    9|   ap_memory|        inputA|         array|
+|inputA_ce1       |  out|    1|   ap_memory|        inputA|         array|
+|inputA_d1        |  out|   32|   ap_memory|        inputA|         array|
+|inputA_q1        |   in|   32|   ap_memory|        inputA|         array|
+|inputA_we1       |  out|    1|   ap_memory|        inputA|         array|
+|inputB_address0  |  out|    9|   ap_memory|        inputB|         array|
+|inputB_ce0       |  out|    1|   ap_memory|        inputB|         array|
+|inputB_d0        |  out|   32|   ap_memory|        inputB|         array|
+|inputB_q0        |   in|   32|   ap_memory|        inputB|         array|
+|inputB_we0       |  out|    1|   ap_memory|        inputB|         array|
+|inputB_address1  |  out|    9|   ap_memory|        inputB|         array|
+|inputB_ce1       |  out|    1|   ap_memory|        inputB|         array|
+|inputB_d1        |  out|   32|   ap_memory|        inputB|         array|
+|inputB_q1        |   in|   32|   ap_memory|        inputB|         array|
+|inputB_we1       |  out|    1|   ap_memory|        inputB|         array|
+|hist_address0    |  out|   10|   ap_memory|          hist|         array|
+|hist_ce0         |  out|    1|   ap_memory|          hist|         array|
+|hist_d0          |  out|   32|   ap_memory|          hist|         array|
+|hist_q0          |   in|   32|   ap_memory|          hist|         array|
+|hist_we0         |  out|    1|   ap_memory|          hist|         array|
+|hist_address1    |  out|   10|   ap_memory|          hist|         array|
+|hist_ce1         |  out|    1|   ap_memory|          hist|         array|
+|hist_d1          |  out|   32|   ap_memory|          hist|         array|
+|hist_q1          |   in|   32|   ap_memory|          hist|         array|
+|hist_we1         |  out|    1|   ap_memory|          hist|         array|
++-----------------+-----+-----+------------+--------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.25>
+ST_1 : Operation 5 [1/1] (3.25ns)   --->   "%hist1 = alloca i64 1" [histogram_parallel.cpp:34]   --->   Operation 5 'alloca' 'hist1' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 6 [1/1] (3.25ns)   --->   "%hist2 = alloca i64 1" [histogram_parallel.cpp:35]   --->   Operation 6 'alloca' 'hist2' <Predicate = true> <Delay = 3.25>
+ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln37 = call void @histogram_map3, i32 %inputA, i32 %hist1" [histogram_parallel.cpp:37]   --->   Operation 7 'call' 'call_ln37' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln38 = call void @histogram_map, i32 %inputB, i32 %hist2" [histogram_parallel.cpp:38]   --->   Operation 8 'call' 'call_ln38' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln37 = call void @histogram_map3, i32 %inputA, i32 %hist1" [histogram_parallel.cpp:37]   --->   Operation 9 'call' 'call_ln37' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln38 = call void @histogram_map, i32 %inputB, i32 %hist2" [histogram_parallel.cpp:38]   --->   Operation 10 'call' 'call_ln38' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 11 [2/2] (0.00ns)   --->   "%call_ln39 = call void @histogram_reduce, i32 %hist1, i32 %hist2, i32 %hist" [histogram_parallel.cpp:39]   --->   Operation 11 'call' 'call_ln39' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_0"   --->   Operation 12 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 13 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %inputA, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %inputA"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %inputB, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %inputB"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %hist, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %hist"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln39 = call void @histogram_reduce, i32 %hist1, i32 %hist2, i32 %hist" [histogram_parallel.cpp:39]   --->   Operation 20 'call' 'call_ln39' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln40 = ret" [histogram_parallel.cpp:40]   --->   Operation 21 'ret' 'ret_ln40' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ inputA]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ inputB]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ hist]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+hist1                    (alloca              ) [ 00111]
+hist2                    (alloca              ) [ 00111]
+call_ln37                (call                ) [ 00000]
+call_ln38                (call                ) [ 00000]
+specdataflowpipeline_ln0 (specdataflowpipeline) [ 00000]
+spectopmodule_ln0        (spectopmodule       ) [ 00000]
+specinterface_ln0        (specinterface       ) [ 00000]
+specbitsmap_ln0          (specbitsmap         ) [ 00000]
+specinterface_ln0        (specinterface       ) [ 00000]
+specbitsmap_ln0          (specbitsmap         ) [ 00000]
+specinterface_ln0        (specinterface       ) [ 00000]
+specbitsmap_ln0          (specbitsmap         ) [ 00000]
+call_ln39                (call                ) [ 00000]
+ret_ln40                 (ret                 ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="inputA">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inputA"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="inputB">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inputB"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="hist">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="hist"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="histogram_map3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="histogram_map"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="histogram_reduce"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1004" name="hist1_alloca_fu_32">
+<pin_list>
+<pin id="33" dir="0" index="0" bw="1" slack="0"/>
+<pin id="34" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="hist1/1 "/>
+</bind>
+</comp>
+
+<comp id="36" class="1004" name="hist2_alloca_fu_36">
+<pin_list>
+<pin id="37" dir="0" index="0" bw="1" slack="0"/>
+<pin id="38" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="hist2/1 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="grp_histogram_map3_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="0" slack="0"/>
+<pin id="42" dir="0" index="1" bw="32" slack="0"/>
+<pin id="43" dir="0" index="2" bw="32" slack="0"/>
+<pin id="44" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln37/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="grp_histogram_map_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="0" slack="0"/>
+<pin id="50" dir="0" index="1" bw="32" slack="0"/>
+<pin id="51" dir="0" index="2" bw="32" slack="0"/>
+<pin id="52" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln38/1 "/>
+</bind>
+</comp>
+
+<comp id="56" class="1004" name="grp_histogram_reduce_fu_56">
+<pin_list>
+<pin id="57" dir="0" index="0" bw="0" slack="0"/>
+<pin id="58" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="59" dir="0" index="2" bw="32" slack="2147483647"/>
+<pin id="60" dir="0" index="3" bw="32" slack="0"/>
+<pin id="61" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln39/3 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="35"><net_src comp="6" pin="0"/><net_sink comp="32" pin=0"/></net>
+
+<net id="39"><net_src comp="6" pin="0"/><net_sink comp="36" pin=0"/></net>
+
+<net id="45"><net_src comp="8" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="46"><net_src comp="0" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="47"><net_src comp="32" pin="1"/><net_sink comp="40" pin=2"/></net>
+
+<net id="53"><net_src comp="10" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="54"><net_src comp="2" pin="0"/><net_sink comp="48" pin=1"/></net>
+
+<net id="55"><net_src comp="36" pin="1"/><net_sink comp="48" pin=2"/></net>
+
+<net id="62"><net_src comp="12" pin="0"/><net_sink comp="56" pin=0"/></net>
+
+<net id="63"><net_src comp="4" pin="0"/><net_sink comp="56" pin=3"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: hist | {3 4 }
+ - Input state : 
+	Port: histogram : inputA | {1 2 }
+	Port: histogram : inputB | {1 2 }
+  - Chain level:
+	State 1
+		call_ln37 : 1
+		call_ln38 : 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------|---------|---------|---------|
+| Operation|       Functional Unit      |  Delay  |    FF   |   LUT   |
+|----------|----------------------------|---------|---------|---------|
+|          |  grp_histogram_map3_fu_40  |  4.764  |   220   |   132   |
+|   call   |   grp_histogram_map_fu_48  |  4.764  |   220   |   132   |
+|          | grp_histogram_reduce_fu_56 |  3.176  |   127   |    81   |
+|----------|----------------------------|---------|---------|---------|
+|   Total  |                            |  12.704 |   567   |   345   |
+|----------|----------------------------|---------|---------|---------|
+
+Memories:
++-----+--------+--------+--------+--------+
+|     |  BRAM  |   FF   |   LUT  |  URAM  |
++-----+--------+--------+--------+--------+
+|hist1|    4   |    0   |    0   |    0   |
+|hist2|    4   |    0   |    0   |    0   |
++-----+--------+--------+--------+--------+
+|Total|    8   |    0   |    0   |    0   |
++-----+--------+--------+--------+--------+
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    -   |   12   |   567  |   345  |    -   |
+|   Memory  |    8   |    -   |    0   |    0   |    0   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    8   |   12   |   567  |   345  |    0   |
++-----------+--------+--------+--------+--------+--------+

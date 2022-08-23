@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="histogram_parallel.h" path="C:\Users\AudiHsieh\Desktop\FPGA\Prefix_Sum_and_Histogram\histogram_parallel.h"/>
+    <originFiles name="histogram_parallel.cpp" path="C:\Users\AudiHsieh\Desktop\FPGA\Prefix_Sum_and_Histogram\histogram_parallel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="C:\Users\AudiHsieh\Desktop\FPGA\Prefix_Sum_and_Histogram\tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
