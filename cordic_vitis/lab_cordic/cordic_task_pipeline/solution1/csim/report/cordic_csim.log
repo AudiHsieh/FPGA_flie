@@ -1,0 +1,365 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../cordic.cpp in debug mode
+   Generating csim.exe
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.50' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.47' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.97' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.94' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.144' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.141' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.191' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.188' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.238' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.235' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.285' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.282' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.332' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.329' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.379' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.376' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.426' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.423' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.473' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.470' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.520' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.517' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.567' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.564' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.614' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.611' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.661' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.658' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.708' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.705' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.755' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.752' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.802' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.799' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.849' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.846' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.896' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.893' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.943' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.940' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.990' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.987' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1037' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1034' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1084' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1081' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1131' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1128' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1178' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1175' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1225' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1222' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1272' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1269' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1319' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1316' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1366' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1363' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1413' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1410' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1460' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1457' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1507' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1504' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1554' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1551' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1601' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1598' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1648' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1645' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1695' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1692' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1742' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1739' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1789' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1786' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1836' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1833' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1883' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1880' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1930' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1927' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1977' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1974' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2024' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2021' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2071' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2068' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2118' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2115' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2165' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2162' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2212' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2209' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2259' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2256' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2306' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2303' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2353' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2350' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2400' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2397' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2447' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2444' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2494' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2491' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2541' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2538' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2588' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2585' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2635' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2632' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2682' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2679' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2729' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2726' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2776' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2773' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2823' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2820' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2870' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2867' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2917' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2914' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2964' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2961' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3011' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3008' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3058' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3055' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3105' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3102' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3152' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3149' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3199' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3196' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3246' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3243' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3293' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3290' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3340' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3337' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3387' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3384' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3434' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3431' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3481' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3478' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3528' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3525' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3575' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3572' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3622' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3619' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3669' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3666' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3716' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3713' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3763' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3760' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3810' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3807' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3857' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3854' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3904' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3901' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3951' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3948' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3998' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3995' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4045' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4042' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4092' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4089' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4139' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4136' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4186' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4183' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.1' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<ap_fixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.2' is read while empty, which may result in RTL simulation hanging.
+
+Average_Error_Sin=0.009000, Average_Error_Cos=0.008585, 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

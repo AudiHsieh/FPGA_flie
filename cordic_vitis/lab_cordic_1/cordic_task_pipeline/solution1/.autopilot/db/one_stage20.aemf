@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651690998000">
+  <ports id="1" name="s_current_cos_V_V" type="PortType" originalName="s_current_cos.V.V" coreName="FIFO" bitwidth="10" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="s_current_sin_V_V" type="PortType" originalName="s_current_sin.V.V" coreName="FIFO" bitwidth="10" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="s_current_theta_V_V" type="PortType" originalName="s_current_theta.V.V" coreName="FIFO" bitwidth="10" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="s_output_cos_V_V" type="PortType" originalName="s_output_cos.V.V" coreName="FIFO" bitwidth="10" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="s_output_sin_V_V" type="PortType" originalName="s_output_sin.V.V" coreName="FIFO" bitwidth="10" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="s_output_theta_V_V" type="PortType" originalName="s_output_theta.V.V" coreName="FIFO" bitwidth="10" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="39" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="41" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="43" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="49" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="50" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="51" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="54" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="55" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="56" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="61" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@ports.3"/>
+  <edges id="62" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="64" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@ports.4"/>
+  <edges id="65" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="67" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@ports.5"/>
+  <edges id="68" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="73" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="78" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@ports.3"/>
+  <edges id="79" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="81" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@ports.4"/>
+  <edges id="82" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="84" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@ports.5"/>
+  <edges id="85" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="86" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <blocks id="18" name="_ZNK13ap_fixed_baseILi10ELi1ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EErsEi.exit" type="BlockType">
+    <controlOutputObjs>_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i71</controlOutputObjs>
+    <controlOutputObjs>_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i94</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="tmp_V_142" lineNumber="15" originalName="tmp.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." bitwidth="10" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="15" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>s_current_cos_V_V</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp_V_143" lineNumber="16" originalName="tmp.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." bitwidth="10" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="16" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>s_current_sin_V_V</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="tmp_V_144" lineNumber="17" originalName="tmp.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." bitwidth="10" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="17" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>s_current_theta_V_V</dataInputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp" lineNumber="22" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." rtlName="tmp_reg_131" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="22" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln22" lineNumber="22" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="22" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <controlInputObjs>_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i94</controlInputObjs>
+      <controlInputObjs>_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i71</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cordic_task_pipeline/cordic.cpp">
+      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>22</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="26" name="_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i94" type="BlockType">
+    <controlInputObjs>_ZNK13ap_fixed_baseILi10ELi1ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EErsEi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_36</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="c_V" lineNumber="24" originalName="c.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." rtlName="c_V_fu_89_p2" bitwidth="10" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="24" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="s_V" lineNumber="25" originalName="s.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." rtlName="grp_fu_75_p2" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="25" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="t_V" lineNumber="26" originalName="t.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." rtlName="t_V_fu_94_p2" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="26" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="s_output_cos_V_V_write_ln27" lineNumber="27" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="27" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>s_output_cos_V_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="s_output_sin_V_V_write_ln28" lineNumber="28" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="28" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>s_output_sin_V_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="s_output_theta_V_V_write_ln29" lineNumber="29" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="29" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>s_output_theta_V_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln31" lineNumber="31" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="31" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <controlInputObjs>block_36</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cordic_task_pipeline/cordic.cpp">
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>27</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+      <validLinenumbers>29</validLinenumbers>
+      <validLinenumbers>31</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i71" type="BlockType">
+    <controlInputObjs>_ZNK13ap_fixed_baseILi10ELi1ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EErsEi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_36</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="c_V_15" lineNumber="32" originalName="c.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." rtlName="grp_fu_75_p2" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="32" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="s_V_15" lineNumber="33" originalName="s.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." rtlName="s_V_15_fu_100_p2" bitwidth="10" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="33" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="t_V_9" lineNumber="34" originalName="t.V" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." rtlName="t_V_9_fu_105_p2" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="34" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="s_output_cos_V_V_write_ln35" lineNumber="35" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="35" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>s_output_cos_V_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="s_output_sin_V_V_write_ln36" lineNumber="36" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="36" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>s_output_sin_V_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="s_output_theta_V_V_write_ln37" lineNumber="37" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.63" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="37" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>s_output_theta_V_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_36</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="cordic_task_pipeline/cordic.cpp">
+      <validLinenumbers>32</validLinenumbers>
+      <validLinenumbers>33</validLinenumbers>
+      <validLinenumbers>34</validLinenumbers>
+      <validLinenumbers>35</validLinenumbers>
+      <validLinenumbers>36</validLinenumbers>
+      <validLinenumbers>37</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="36" name="block_36" type="BlockType">
+    <controlInputObjs>_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i94</controlInputObjs>
+    <controlInputObjs>_ZN13ap_fixed_baseILi11ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi10ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i71</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln40" lineNumber="40" fileName="cordic_task_pipeline/cordic.cpp" fileDirectory=".." opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="cordic_task_pipeline/cordic.cpp" linenumber="40" fileDirectory="/home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS" functionName="one_stage"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="cordic_task_pipeline/cordic.cpp">
+      <validLinenumbers>40</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="tmp_reg_131">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_V_142_reg_111">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_V_144_reg_125">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_V_143_reg_118">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <expressionNodes realName="c_V_fu_89">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="s_V_15_fu_100">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_75">
+    <nodeIds>20</nodeIds>
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="t_V_9_fu_105">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="t_V_fu_94">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_81">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_write_fu_68">
+    <nodeIds>24</nodeIds>
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_V_143_read_fu_42">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_54">
+    <nodeIds>22</nodeIds>
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_V_142_read_fu_36">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_61">
+    <nodeIds>23</nodeIds>
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_V_144_read_fu_48">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioPorts name="s_current_cos_V_V">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_current_sin_V_V">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_current_theta_V_V">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_output_cos_V_V">
+    <contents name="write">
+      <nodeIds>22</nodeIds>
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_output_sin_V_V">
+    <contents name="write">
+      <nodeIds>23</nodeIds>
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_output_theta_V_V">
+    <contents name="write">
+      <nodeIds>24</nodeIds>
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>26</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>36</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

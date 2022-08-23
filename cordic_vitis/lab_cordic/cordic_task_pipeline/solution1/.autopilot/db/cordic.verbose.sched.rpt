@@ -1,0 +1,497 @@
+
+
+================================================================
+== Vivado HLS Report for 'cordic'
+================================================================
+* Date:           Thu May  5 03:03:18 2022
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        cordic_task_pipeline
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 5.365 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       31|       31| 0.310 us | 0.310 us |    2|    2| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 32
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 32, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%Stage0_COS_V_V = alloca i10, align 2"   --->   Operation 33 'alloca' 'Stage0_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%Stage0_Sin_V_V = alloca i10, align 2"   --->   Operation 34 'alloca' 'Stage0_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%Stage1_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:53]   --->   Operation 35 'alloca' 'Stage1_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%Stage1_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:53]   --->   Operation 36 'alloca' 'Stage1_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%Theta2_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:53]   --->   Operation 37 'alloca' 'Theta2_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%Stage2_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:54]   --->   Operation 38 'alloca' 'Stage2_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%Stage2_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:54]   --->   Operation 39 'alloca' 'Stage2_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%Theta3_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:54]   --->   Operation 40 'alloca' 'Theta3_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%Stage3_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:55]   --->   Operation 41 'alloca' 'Stage3_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%Stage3_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:55]   --->   Operation 42 'alloca' 'Stage3_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%Theta4_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:55]   --->   Operation 43 'alloca' 'Theta4_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%Stage4_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:56]   --->   Operation 44 'alloca' 'Stage4_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%Stage4_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:56]   --->   Operation 45 'alloca' 'Stage4_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%Theta5_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:56]   --->   Operation 46 'alloca' 'Theta5_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%Stage5_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:57]   --->   Operation 47 'alloca' 'Stage5_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%Stage5_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:57]   --->   Operation 48 'alloca' 'Stage5_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%Theta6_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:57]   --->   Operation 49 'alloca' 'Theta6_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%Stage6_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:58]   --->   Operation 50 'alloca' 'Stage6_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%Stage6_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:58]   --->   Operation 51 'alloca' 'Stage6_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%Theta7_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:58]   --->   Operation 52 'alloca' 'Theta7_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%Stage7_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:59]   --->   Operation 53 'alloca' 'Stage7_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%Stage7_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:59]   --->   Operation 54 'alloca' 'Stage7_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%Theta8_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:59]   --->   Operation 55 'alloca' 'Theta8_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%Stage8_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:60]   --->   Operation 56 'alloca' 'Stage8_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%Stage8_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:60]   --->   Operation 57 'alloca' 'Stage8_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%Theta9_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:60]   --->   Operation 58 'alloca' 'Theta9_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%Stage9_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:61]   --->   Operation 59 'alloca' 'Stage9_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%Stage9_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:61]   --->   Operation 60 'alloca' 'Stage9_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%Theta10_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:61]   --->   Operation 61 'alloca' 'Theta10_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%Stage10_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:62]   --->   Operation 62 'alloca' 'Stage10_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%Stage10_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:62]   --->   Operation 63 'alloca' 'Stage10_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%Theta11_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:62]   --->   Operation 64 'alloca' 'Theta11_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%Stage11_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:63]   --->   Operation 65 'alloca' 'Stage11_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%Stage11_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:63]   --->   Operation 66 'alloca' 'Stage11_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%Theta12_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:63]   --->   Operation 67 'alloca' 'Theta12_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%Stage12_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:64]   --->   Operation 68 'alloca' 'Stage12_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%Stage12_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:64]   --->   Operation 69 'alloca' 'Stage12_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%Theta13_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:64]   --->   Operation 70 'alloca' 'Theta13_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%Stage13_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:65]   --->   Operation 71 'alloca' 'Stage13_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%Stage13_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:65]   --->   Operation 72 'alloca' 'Stage13_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%Theta14_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:65]   --->   Operation 73 'alloca' 'Theta14_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%Stage14_COS_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:66]   --->   Operation 74 'alloca' 'Stage14_COS_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%Stage14_Sin_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:66]   --->   Operation 75 'alloca' 'Stage14_Sin_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%Theta15_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:66]   --->   Operation 76 'alloca' 'Theta15_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%Theta16_V_V = alloca i10, align 2" [cordic_task_pipeline/cordic.cpp:67]   --->   Operation 77 'alloca' 'Theta16_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 10> <Depth = 2> <FIFO>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "call fastcc void @Block_ap_fixed_base.(i10* %Stage0_COS_V_V, i10* %Stage0_Sin_V_V)"   --->   Operation 78 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 79 [2/2] (0.00ns)   --->   "call fastcc void @one_stage20(i10* %Stage0_COS_V_V, i10* %Stage0_Sin_V_V, i10* %in_theta_V_V, i10* %Stage1_COS_V_V, i10* %Stage1_Sin_V_V, i10* %Theta2_V_V)" [cordic_task_pipeline/cordic.cpp:71]   --->   Operation 79 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 80 [1/2] (0.00ns)   --->   "call fastcc void @one_stage20(i10* %Stage0_COS_V_V, i10* %Stage0_Sin_V_V, i10* %in_theta_V_V, i10* %Stage1_COS_V_V, i10* %Stage1_Sin_V_V, i10* %Theta2_V_V)" [cordic_task_pipeline/cordic.cpp:71]   --->   Operation 80 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 81 [2/2] (0.00ns)   --->   "call fastcc void @one_stage21(i10* %Stage1_COS_V_V, i10* %Stage1_Sin_V_V, i10* %Theta2_V_V, i10* %Stage2_COS_V_V, i10* %Stage2_Sin_V_V, i10* %Theta3_V_V)" [cordic_task_pipeline/cordic.cpp:74]   --->   Operation 81 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 82 [1/2] (0.00ns)   --->   "call fastcc void @one_stage21(i10* %Stage1_COS_V_V, i10* %Stage1_Sin_V_V, i10* %Theta2_V_V, i10* %Stage2_COS_V_V, i10* %Stage2_Sin_V_V, i10* %Theta3_V_V)" [cordic_task_pipeline/cordic.cpp:74]   --->   Operation 82 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 83 [2/2] (0.00ns)   --->   "call fastcc void @one_stage22(i10* %Stage2_COS_V_V, i10* %Stage2_Sin_V_V, i10* %Theta3_V_V, i10* %Stage3_COS_V_V, i10* %Stage3_Sin_V_V, i10* %Theta4_V_V)" [cordic_task_pipeline/cordic.cpp:77]   --->   Operation 83 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 84 [1/2] (0.00ns)   --->   "call fastcc void @one_stage22(i10* %Stage2_COS_V_V, i10* %Stage2_Sin_V_V, i10* %Theta3_V_V, i10* %Stage3_COS_V_V, i10* %Stage3_Sin_V_V, i10* %Theta4_V_V)" [cordic_task_pipeline/cordic.cpp:77]   --->   Operation 84 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 85 [2/2] (0.00ns)   --->   "call fastcc void @one_stage23(i10* %Stage3_COS_V_V, i10* %Stage3_Sin_V_V, i10* %Theta4_V_V, i10* %Stage4_COS_V_V, i10* %Stage4_Sin_V_V, i10* %Theta5_V_V)" [cordic_task_pipeline/cordic.cpp:80]   --->   Operation 85 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 86 [1/2] (0.00ns)   --->   "call fastcc void @one_stage23(i10* %Stage3_COS_V_V, i10* %Stage3_Sin_V_V, i10* %Theta4_V_V, i10* %Stage4_COS_V_V, i10* %Stage4_Sin_V_V, i10* %Theta5_V_V)" [cordic_task_pipeline/cordic.cpp:80]   --->   Operation 86 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 87 [2/2] (0.00ns)   --->   "call fastcc void @one_stage24(i10* %Stage4_COS_V_V, i10* %Stage4_Sin_V_V, i10* %Theta5_V_V, i10* %Stage5_COS_V_V, i10* %Stage5_Sin_V_V, i10* %Theta6_V_V)" [cordic_task_pipeline/cordic.cpp:83]   --->   Operation 87 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 88 [1/2] (0.00ns)   --->   "call fastcc void @one_stage24(i10* %Stage4_COS_V_V, i10* %Stage4_Sin_V_V, i10* %Theta5_V_V, i10* %Stage5_COS_V_V, i10* %Stage5_Sin_V_V, i10* %Theta6_V_V)" [cordic_task_pipeline/cordic.cpp:83]   --->   Operation 88 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 89 [2/2] (0.00ns)   --->   "call fastcc void @one_stage25(i10* %Stage5_COS_V_V, i10* %Stage5_Sin_V_V, i10* %Theta6_V_V, i10* %Stage6_COS_V_V, i10* %Stage6_Sin_V_V, i10* %Theta7_V_V)" [cordic_task_pipeline/cordic.cpp:86]   --->   Operation 89 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 90 [1/2] (0.00ns)   --->   "call fastcc void @one_stage25(i10* %Stage5_COS_V_V, i10* %Stage5_Sin_V_V, i10* %Theta6_V_V, i10* %Stage6_COS_V_V, i10* %Stage6_Sin_V_V, i10* %Theta7_V_V)" [cordic_task_pipeline/cordic.cpp:86]   --->   Operation 90 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 91 [2/2] (0.00ns)   --->   "call fastcc void @one_stage26(i10* %Stage6_COS_V_V, i10* %Stage6_Sin_V_V, i10* %Theta7_V_V, i10* %Stage7_COS_V_V, i10* %Stage7_Sin_V_V, i10* %Theta8_V_V)" [cordic_task_pipeline/cordic.cpp:89]   --->   Operation 91 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 92 [1/2] (0.00ns)   --->   "call fastcc void @one_stage26(i10* %Stage6_COS_V_V, i10* %Stage6_Sin_V_V, i10* %Theta7_V_V, i10* %Stage7_COS_V_V, i10* %Stage7_Sin_V_V, i10* %Theta8_V_V)" [cordic_task_pipeline/cordic.cpp:89]   --->   Operation 92 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 93 [2/2] (0.00ns)   --->   "call fastcc void @one_stage27(i10* %Stage7_COS_V_V, i10* %Stage7_Sin_V_V, i10* %Theta8_V_V, i10* %Stage8_COS_V_V, i10* %Stage8_Sin_V_V, i10* %Theta9_V_V)" [cordic_task_pipeline/cordic.cpp:92]   --->   Operation 93 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 94 [1/2] (0.00ns)   --->   "call fastcc void @one_stage27(i10* %Stage7_COS_V_V, i10* %Stage7_Sin_V_V, i10* %Theta8_V_V, i10* %Stage8_COS_V_V, i10* %Stage8_Sin_V_V, i10* %Theta9_V_V)" [cordic_task_pipeline/cordic.cpp:92]   --->   Operation 94 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 95 [2/2] (0.00ns)   --->   "call fastcc void @one_stage28(i10* %Stage8_COS_V_V, i10* %Stage8_Sin_V_V, i10* %Theta9_V_V, i10* %Stage9_COS_V_V, i10* %Stage9_Sin_V_V, i10* %Theta10_V_V)" [cordic_task_pipeline/cordic.cpp:95]   --->   Operation 95 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 0.00>
+ST_19 : Operation 96 [1/2] (0.00ns)   --->   "call fastcc void @one_stage28(i10* %Stage8_COS_V_V, i10* %Stage8_Sin_V_V, i10* %Theta9_V_V, i10* %Stage9_COS_V_V, i10* %Stage9_Sin_V_V, i10* %Theta10_V_V)" [cordic_task_pipeline/cordic.cpp:95]   --->   Operation 96 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 97 [2/2] (0.00ns)   --->   "call fastcc void @one_stage29(i10* %Stage9_COS_V_V, i10* %Stage9_Sin_V_V, i10* %Theta10_V_V, i10* %Stage10_COS_V_V, i10* %Stage10_Sin_V_V, i10* %Theta11_V_V)" [cordic_task_pipeline/cordic.cpp:98]   --->   Operation 97 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 98 [1/2] (0.00ns)   --->   "call fastcc void @one_stage29(i10* %Stage9_COS_V_V, i10* %Stage9_Sin_V_V, i10* %Theta10_V_V, i10* %Stage10_COS_V_V, i10* %Stage10_Sin_V_V, i10* %Theta11_V_V)" [cordic_task_pipeline/cordic.cpp:98]   --->   Operation 98 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 0.00>
+ST_22 : Operation 99 [2/2] (0.00ns)   --->   "call fastcc void @one_stage30(i10* %Stage10_COS_V_V, i10* %Stage10_Sin_V_V, i10* %Theta11_V_V, i10* %Stage11_COS_V_V, i10* %Stage11_Sin_V_V, i10* %Theta12_V_V)" [cordic_task_pipeline/cordic.cpp:101]   --->   Operation 99 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 22> <Delay = 0.00>
+ST_23 : Operation 100 [1/2] (0.00ns)   --->   "call fastcc void @one_stage30(i10* %Stage10_COS_V_V, i10* %Stage10_Sin_V_V, i10* %Theta11_V_V, i10* %Stage11_COS_V_V, i10* %Stage11_Sin_V_V, i10* %Theta12_V_V)" [cordic_task_pipeline/cordic.cpp:101]   --->   Operation 100 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 101 [2/2] (0.00ns)   --->   "call fastcc void @one_stage31(i10* %Stage11_COS_V_V, i10* %Stage11_Sin_V_V, i10* %Theta12_V_V, i10* %Stage12_COS_V_V, i10* %Stage12_Sin_V_V, i10* %Theta13_V_V)" [cordic_task_pipeline/cordic.cpp:104]   --->   Operation 101 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 0.00>
+ST_25 : Operation 102 [1/2] (0.00ns)   --->   "call fastcc void @one_stage31(i10* %Stage11_COS_V_V, i10* %Stage11_Sin_V_V, i10* %Theta12_V_V, i10* %Stage12_COS_V_V, i10* %Stage12_Sin_V_V, i10* %Theta13_V_V)" [cordic_task_pipeline/cordic.cpp:104]   --->   Operation 102 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 0.00>
+ST_26 : Operation 103 [2/2] (0.00ns)   --->   "call fastcc void @one_stage32(i10* %Stage12_COS_V_V, i10* %Stage12_Sin_V_V, i10* %Theta13_V_V, i10* %Stage13_COS_V_V, i10* %Stage13_Sin_V_V, i10* %Theta14_V_V)" [cordic_task_pipeline/cordic.cpp:107]   --->   Operation 103 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 0.00>
+ST_27 : Operation 104 [1/2] (0.00ns)   --->   "call fastcc void @one_stage32(i10* %Stage12_COS_V_V, i10* %Stage12_Sin_V_V, i10* %Theta13_V_V, i10* %Stage13_COS_V_V, i10* %Stage13_Sin_V_V, i10* %Theta14_V_V)" [cordic_task_pipeline/cordic.cpp:107]   --->   Operation 104 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 0.00>
+ST_28 : Operation 105 [2/2] (0.00ns)   --->   "call fastcc void @one_stage33(i10* %Stage13_COS_V_V, i10* %Stage13_Sin_V_V, i10* %Theta14_V_V, i10* %Stage14_COS_V_V, i10* %Stage14_Sin_V_V, i10* %Theta15_V_V)" [cordic_task_pipeline/cordic.cpp:110]   --->   Operation 105 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 0.00>
+ST_29 : Operation 106 [1/2] (0.00ns)   --->   "call fastcc void @one_stage33(i10* %Stage13_COS_V_V, i10* %Stage13_Sin_V_V, i10* %Theta14_V_V, i10* %Stage14_COS_V_V, i10* %Stage14_Sin_V_V, i10* %Theta15_V_V)" [cordic_task_pipeline/cordic.cpp:110]   --->   Operation 106 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 29> <Delay = 0.00>
+ST_30 : Operation 107 [2/2] (0.00ns)   --->   "call fastcc void @one_stage34(i10* %Stage14_COS_V_V, i10* %Stage14_Sin_V_V, i10* %Theta15_V_V, i10* %out_c_V_V, i10* %out_s_V_V, i10* %Theta16_V_V)" [cordic_task_pipeline/cordic.cpp:113]   --->   Operation 107 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 0.00>
+ST_31 : Operation 108 [1/2] (0.00ns)   --->   "call fastcc void @one_stage34(i10* %Stage14_COS_V_V, i10* %Stage14_Sin_V_V, i10* %Theta15_V_V, i10* %out_c_V_V, i10* %out_s_V_V, i10* %Theta16_V_V)" [cordic_task_pipeline/cordic.cpp:113]   --->   Operation 108 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 0.00>
+ST_32 : Operation 109 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str) nounwind" [cordic_task_pipeline/cordic.cpp:49]   --->   Operation 109 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 110 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i10* %out_c_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 110 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 111 [1/1] (0.00ns)   --->   "%empty_81 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %out_s_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 111 'specinterface' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 112 [1/1] (0.00ns)   --->   "%empty_82 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %in_theta_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 112 'specinterface' 'empty_82' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 113 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10* %in_theta_V_V), !map !87"   --->   Operation 113 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 114 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10* %out_s_V_V), !map !91"   --->   Operation 114 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 115 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10* %out_c_V_V), !map !95"   --->   Operation 115 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 116 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @cordic_str) nounwind"   --->   Operation 116 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 117 [1/1] (0.00ns)   --->   "%empty_83 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage0_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage0_COS_V_V, i10* %Stage0_COS_V_V)"   --->   Operation 117 'specchannel' 'empty_83' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 118 [1/1] (0.00ns)   --->   "%empty_84 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage0_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 118 'specinterface' 'empty_84' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 119 [1/1] (0.00ns)   --->   "%empty_85 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage0_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage0_Sin_V_V, i10* %Stage0_Sin_V_V)"   --->   Operation 119 'specchannel' 'empty_85' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 120 [1/1] (0.00ns)   --->   "%empty_86 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage0_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 120 'specinterface' 'empty_86' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 121 [1/1] (0.00ns)   --->   "%empty_87 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage1_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage1_COS_V_V, i10* %Stage1_COS_V_V)"   --->   Operation 121 'specchannel' 'empty_87' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 122 [1/1] (0.00ns)   --->   "%empty_88 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage1_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 122 'specinterface' 'empty_88' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 123 [1/1] (0.00ns)   --->   "%empty_89 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage1_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage1_Sin_V_V, i10* %Stage1_Sin_V_V)"   --->   Operation 123 'specchannel' 'empty_89' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 124 [1/1] (0.00ns)   --->   "%empty_90 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage1_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 124 'specinterface' 'empty_90' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 125 [1/1] (0.00ns)   --->   "%empty_91 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta2_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta2_V_V, i10* %Theta2_V_V)"   --->   Operation 125 'specchannel' 'empty_91' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 126 [1/1] (0.00ns)   --->   "%empty_92 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta2_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 126 'specinterface' 'empty_92' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 127 [1/1] (0.00ns)   --->   "%empty_93 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage2_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage2_COS_V_V, i10* %Stage2_COS_V_V)"   --->   Operation 127 'specchannel' 'empty_93' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 128 [1/1] (0.00ns)   --->   "%empty_94 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage2_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 128 'specinterface' 'empty_94' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 129 [1/1] (0.00ns)   --->   "%empty_95 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage2_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage2_Sin_V_V, i10* %Stage2_Sin_V_V)"   --->   Operation 129 'specchannel' 'empty_95' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 130 [1/1] (0.00ns)   --->   "%empty_96 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage2_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 130 'specinterface' 'empty_96' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 131 [1/1] (0.00ns)   --->   "%empty_97 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta3_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta3_V_V, i10* %Theta3_V_V)"   --->   Operation 131 'specchannel' 'empty_97' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 132 [1/1] (0.00ns)   --->   "%empty_98 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta3_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 132 'specinterface' 'empty_98' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 133 [1/1] (0.00ns)   --->   "%empty_99 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage3_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage3_COS_V_V, i10* %Stage3_COS_V_V)"   --->   Operation 133 'specchannel' 'empty_99' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 134 [1/1] (0.00ns)   --->   "%empty_100 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage3_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 134 'specinterface' 'empty_100' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 135 [1/1] (0.00ns)   --->   "%empty_101 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage3_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage3_Sin_V_V, i10* %Stage3_Sin_V_V)"   --->   Operation 135 'specchannel' 'empty_101' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 136 [1/1] (0.00ns)   --->   "%empty_102 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage3_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 136 'specinterface' 'empty_102' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 137 [1/1] (0.00ns)   --->   "%empty_103 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta4_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta4_V_V, i10* %Theta4_V_V)"   --->   Operation 137 'specchannel' 'empty_103' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 138 [1/1] (0.00ns)   --->   "%empty_104 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta4_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 138 'specinterface' 'empty_104' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 139 [1/1] (0.00ns)   --->   "%empty_105 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage4_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage4_COS_V_V, i10* %Stage4_COS_V_V)"   --->   Operation 139 'specchannel' 'empty_105' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 140 [1/1] (0.00ns)   --->   "%empty_106 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage4_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 140 'specinterface' 'empty_106' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 141 [1/1] (0.00ns)   --->   "%empty_107 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage4_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage4_Sin_V_V, i10* %Stage4_Sin_V_V)"   --->   Operation 141 'specchannel' 'empty_107' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 142 [1/1] (0.00ns)   --->   "%empty_108 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage4_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 142 'specinterface' 'empty_108' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 143 [1/1] (0.00ns)   --->   "%empty_109 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta5_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta5_V_V, i10* %Theta5_V_V)"   --->   Operation 143 'specchannel' 'empty_109' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 144 [1/1] (0.00ns)   --->   "%empty_110 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta5_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 144 'specinterface' 'empty_110' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 145 [1/1] (0.00ns)   --->   "%empty_111 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage5_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage5_COS_V_V, i10* %Stage5_COS_V_V)"   --->   Operation 145 'specchannel' 'empty_111' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 146 [1/1] (0.00ns)   --->   "%empty_112 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage5_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 146 'specinterface' 'empty_112' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 147 [1/1] (0.00ns)   --->   "%empty_113 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage5_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage5_Sin_V_V, i10* %Stage5_Sin_V_V)"   --->   Operation 147 'specchannel' 'empty_113' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 148 [1/1] (0.00ns)   --->   "%empty_114 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage5_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 148 'specinterface' 'empty_114' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 149 [1/1] (0.00ns)   --->   "%empty_115 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta6_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta6_V_V, i10* %Theta6_V_V)"   --->   Operation 149 'specchannel' 'empty_115' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 150 [1/1] (0.00ns)   --->   "%empty_116 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta6_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 150 'specinterface' 'empty_116' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 151 [1/1] (0.00ns)   --->   "%empty_117 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage6_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage6_COS_V_V, i10* %Stage6_COS_V_V)"   --->   Operation 151 'specchannel' 'empty_117' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 152 [1/1] (0.00ns)   --->   "%empty_118 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage6_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 152 'specinterface' 'empty_118' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 153 [1/1] (0.00ns)   --->   "%empty_119 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage6_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage6_Sin_V_V, i10* %Stage6_Sin_V_V)"   --->   Operation 153 'specchannel' 'empty_119' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 154 [1/1] (0.00ns)   --->   "%empty_120 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage6_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 154 'specinterface' 'empty_120' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 155 [1/1] (0.00ns)   --->   "%empty_121 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta7_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta7_V_V, i10* %Theta7_V_V)"   --->   Operation 155 'specchannel' 'empty_121' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 156 [1/1] (0.00ns)   --->   "%empty_122 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta7_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 156 'specinterface' 'empty_122' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 157 [1/1] (0.00ns)   --->   "%empty_123 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage7_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage7_COS_V_V, i10* %Stage7_COS_V_V)"   --->   Operation 157 'specchannel' 'empty_123' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 158 [1/1] (0.00ns)   --->   "%empty_124 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage7_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 158 'specinterface' 'empty_124' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 159 [1/1] (0.00ns)   --->   "%empty_125 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage7_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage7_Sin_V_V, i10* %Stage7_Sin_V_V)"   --->   Operation 159 'specchannel' 'empty_125' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 160 [1/1] (0.00ns)   --->   "%empty_126 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage7_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 160 'specinterface' 'empty_126' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 161 [1/1] (0.00ns)   --->   "%empty_127 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta8_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta8_V_V, i10* %Theta8_V_V)"   --->   Operation 161 'specchannel' 'empty_127' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 162 [1/1] (0.00ns)   --->   "%empty_128 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta8_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 162 'specinterface' 'empty_128' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 163 [1/1] (0.00ns)   --->   "%empty_129 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage8_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage8_COS_V_V, i10* %Stage8_COS_V_V)"   --->   Operation 163 'specchannel' 'empty_129' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 164 [1/1] (0.00ns)   --->   "%empty_130 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage8_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 164 'specinterface' 'empty_130' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 165 [1/1] (0.00ns)   --->   "%empty_131 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage8_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage8_Sin_V_V, i10* %Stage8_Sin_V_V)"   --->   Operation 165 'specchannel' 'empty_131' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 166 [1/1] (0.00ns)   --->   "%empty_132 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage8_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 166 'specinterface' 'empty_132' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 167 [1/1] (0.00ns)   --->   "%empty_133 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @Theta9_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta9_V_V, i10* %Theta9_V_V)"   --->   Operation 167 'specchannel' 'empty_133' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 168 [1/1] (0.00ns)   --->   "%empty_134 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta9_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 168 'specinterface' 'empty_134' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 169 [1/1] (0.00ns)   --->   "%empty_135 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage9_COS_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage9_COS_V_V, i10* %Stage9_COS_V_V)"   --->   Operation 169 'specchannel' 'empty_135' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 170 [1/1] (0.00ns)   --->   "%empty_136 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage9_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 170 'specinterface' 'empty_136' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 171 [1/1] (0.00ns)   --->   "%empty_137 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @Stage9_Sin_OC_V_OC_V, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage9_Sin_V_V, i10* %Stage9_Sin_V_V)"   --->   Operation 171 'specchannel' 'empty_137' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 172 [1/1] (0.00ns)   --->   "%empty_138 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage9_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 172 'specinterface' 'empty_138' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 173 [1/1] (0.00ns)   --->   "%empty_139 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @Theta10_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta10_V_V, i10* %Theta10_V_V)"   --->   Operation 173 'specchannel' 'empty_139' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 174 [1/1] (0.00ns)   --->   "%empty_140 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta10_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 174 'specinterface' 'empty_140' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 175 [1/1] (0.00ns)   --->   "%empty_141 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage10_COS_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage10_COS_V_V, i10* %Stage10_COS_V_V)"   --->   Operation 175 'specchannel' 'empty_141' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 176 [1/1] (0.00ns)   --->   "%empty_142 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage10_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 176 'specinterface' 'empty_142' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 177 [1/1] (0.00ns)   --->   "%empty_143 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage10_Sin_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage10_Sin_V_V, i10* %Stage10_Sin_V_V)"   --->   Operation 177 'specchannel' 'empty_143' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 178 [1/1] (0.00ns)   --->   "%empty_144 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage10_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 178 'specinterface' 'empty_144' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 179 [1/1] (0.00ns)   --->   "%empty_145 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @Theta11_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta11_V_V, i10* %Theta11_V_V)"   --->   Operation 179 'specchannel' 'empty_145' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 180 [1/1] (0.00ns)   --->   "%empty_146 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta11_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 180 'specinterface' 'empty_146' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 181 [1/1] (0.00ns)   --->   "%empty_147 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage11_COS_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage11_COS_V_V, i10* %Stage11_COS_V_V)"   --->   Operation 181 'specchannel' 'empty_147' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 182 [1/1] (0.00ns)   --->   "%empty_148 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage11_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 182 'specinterface' 'empty_148' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 183 [1/1] (0.00ns)   --->   "%empty_149 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage11_Sin_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage11_Sin_V_V, i10* %Stage11_Sin_V_V)"   --->   Operation 183 'specchannel' 'empty_149' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 184 [1/1] (0.00ns)   --->   "%empty_150 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage11_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 184 'specinterface' 'empty_150' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 185 [1/1] (0.00ns)   --->   "%empty_151 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @Theta12_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta12_V_V, i10* %Theta12_V_V)"   --->   Operation 185 'specchannel' 'empty_151' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 186 [1/1] (0.00ns)   --->   "%empty_152 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta12_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 186 'specinterface' 'empty_152' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 187 [1/1] (0.00ns)   --->   "%empty_153 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage12_COS_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage12_COS_V_V, i10* %Stage12_COS_V_V)"   --->   Operation 187 'specchannel' 'empty_153' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 188 [1/1] (0.00ns)   --->   "%empty_154 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage12_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 188 'specinterface' 'empty_154' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 189 [1/1] (0.00ns)   --->   "%empty_155 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage12_Sin_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage12_Sin_V_V, i10* %Stage12_Sin_V_V)"   --->   Operation 189 'specchannel' 'empty_155' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 190 [1/1] (0.00ns)   --->   "%empty_156 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage12_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 190 'specinterface' 'empty_156' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 191 [1/1] (0.00ns)   --->   "%empty_157 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @Theta13_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta13_V_V, i10* %Theta13_V_V)"   --->   Operation 191 'specchannel' 'empty_157' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 192 [1/1] (0.00ns)   --->   "%empty_158 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta13_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 192 'specinterface' 'empty_158' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 193 [1/1] (0.00ns)   --->   "%empty_159 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage13_COS_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage13_COS_V_V, i10* %Stage13_COS_V_V)"   --->   Operation 193 'specchannel' 'empty_159' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 194 [1/1] (0.00ns)   --->   "%empty_160 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage13_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 194 'specinterface' 'empty_160' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 195 [1/1] (0.00ns)   --->   "%empty_161 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage13_Sin_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage13_Sin_V_V, i10* %Stage13_Sin_V_V)"   --->   Operation 195 'specchannel' 'empty_161' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 196 [1/1] (0.00ns)   --->   "%empty_162 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage13_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 196 'specinterface' 'empty_162' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 197 [1/1] (0.00ns)   --->   "%empty_163 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @Theta14_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta14_V_V, i10* %Theta14_V_V)"   --->   Operation 197 'specchannel' 'empty_163' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 198 [1/1] (0.00ns)   --->   "%empty_164 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta14_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 198 'specinterface' 'empty_164' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 199 [1/1] (0.00ns)   --->   "%empty_165 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage14_COS_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage14_COS_V_V, i10* %Stage14_COS_V_V)"   --->   Operation 199 'specchannel' 'empty_165' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 200 [1/1] (0.00ns)   --->   "%empty_166 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage14_COS_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 200 'specinterface' 'empty_166' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 201 [1/1] (0.00ns)   --->   "%empty_167 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @Stage14_Sin_OC_V_OC_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Stage14_Sin_V_V, i10* %Stage14_Sin_V_V)"   --->   Operation 201 'specchannel' 'empty_167' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 202 [1/1] (0.00ns)   --->   "%empty_168 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Stage14_Sin_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 202 'specinterface' 'empty_168' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 203 [1/1] (0.00ns)   --->   "%empty_169 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @Theta15_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta15_V_V, i10* %Theta15_V_V)"   --->   Operation 203 'specchannel' 'empty_169' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 204 [1/1] (0.00ns)   --->   "%empty_170 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta15_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 204 'specinterface' 'empty_170' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 205 [1/1] (0.00ns)   --->   "%empty_171 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @Theta16_OC_V_OC_V_st, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i10* %Theta16_V_V, i10* %Theta16_V_V)"   --->   Operation 205 'specchannel' 'empty_171' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 206 [1/1] (0.00ns)   --->   "%empty_172 = call i32 (...)* @_ssdm_op_SpecInterface(i10* %Theta16_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 206 'specinterface' 'empty_172' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 207 [1/1] (0.00ns)   --->   "call fastcc void @Block_ap_fixed_base..1(i10* %Theta16_V_V)"   --->   Operation 207 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_32 : Operation 208 [1/1] (0.00ns)   --->   "ret void" [cordic_task_pipeline/cordic.cpp:116]   --->   Operation 208 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0ns
+The critical path consists of the following:
+
+ <State 18>: 0ns
+The critical path consists of the following:
+
+ <State 19>: 0ns
+The critical path consists of the following:
+
+ <State 20>: 0ns
+The critical path consists of the following:
+
+ <State 21>: 0ns
+The critical path consists of the following:
+
+ <State 22>: 0ns
+The critical path consists of the following:
+
+ <State 23>: 0ns
+The critical path consists of the following:
+
+ <State 24>: 0ns
+The critical path consists of the following:
+
+ <State 25>: 0ns
+The critical path consists of the following:
+
+ <State 26>: 0ns
+The critical path consists of the following:
+
+ <State 27>: 0ns
+The critical path consists of the following:
+
+ <State 28>: 0ns
+The critical path consists of the following:
+
+ <State 29>: 0ns
+The critical path consists of the following:
+
+ <State 30>: 0ns
+The critical path consists of the following:
+
+ <State 31>: 0ns
+The critical path consists of the following:
+
+ <State 32>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

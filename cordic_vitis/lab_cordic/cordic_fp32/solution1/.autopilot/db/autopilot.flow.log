@@ -1,0 +1,1516 @@
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:24:04 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 1.05 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.16 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.36 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.15 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 2.89 sec.
+Command ap_source done; 4.25 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:24:58 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.99 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.1 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.24 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.15 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.21 sec.
+Command ap_source done; 2.45 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:31:05 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.98 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.22 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.14 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.88 sec.
+Command ap_source done; 3.1 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:32:14 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.98 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.23 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.16 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.12 sec.
+Command ap_source done; 2.35 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:32:34 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.99 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.22 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.14 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.13 sec.
+Command ap_source done; 2.35 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:33:59 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.98 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.22 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.14 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.86 sec.
+Command ap_source done; 3.08 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:34:36 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.98 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.21 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.16 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.12 sec.
+Command ap_source done; 2.33 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:35:40 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.96 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.22 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.14 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.09 sec.
+Command ap_source done; 2.31 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:36:19 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 1.02 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.15 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.29 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.14 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.08 sec.
+Command ap_source done; 2.37 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:36:39 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 1.04 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.14 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.28 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.15 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.11 sec.
+Command ap_source done; 2.39 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:37:05 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.98 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.23 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.14 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.08 sec.
+Command ap_source done; 2.32 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:37:27 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.98 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.09 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.22 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.15 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.89 sec.
+Command ap_source done; 3.11 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:37:49 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.94 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.07 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.22 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.14 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.94 sec.
+Command ap_source done; 3.16 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:38:03 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.94 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.04 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.17 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.15 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.93 sec.
+Command ap_source done; 3.1 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/solution1 opened at Wed May 04 20:38:19 CST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/jiaming/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.98 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.08 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 1.23 sec.
+Execute   csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/tb.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.cpp 
+Execute     is_encrypted /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     is_xip /home/jiaming/workplace/Read_the_docs/project_files/project2/cordic/HLS/cordic_fp32/cordic.h 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.16 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.93 sec.
+Command ap_source done; 3.16 sec.
+Execute cleanup_all 
