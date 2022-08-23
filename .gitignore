@@ -1,3 +1,5 @@
 Prefix_Sum_and_Histogram/Prefix
 SPMV/spmv_baseline.zip
 SPMV/spmv_partially_unroll.zip
+SPMV/spmv_baseline
+SPMV/spmv_partially_unroll
