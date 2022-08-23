@@ -1,9 +1,0 @@
-{"sourceFile": [{
-      "name": "",
-      "directive": [{
-          "functionName": "cordic",
-          "label": "cordic_label0",
-          "functionLabel": "",
-          "pragma": {"name": "PIPELINE"}
-        }]
-    }]}

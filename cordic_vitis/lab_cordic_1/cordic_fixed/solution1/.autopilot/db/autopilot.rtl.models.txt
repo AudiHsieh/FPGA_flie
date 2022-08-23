@@ -1,2 +1,0 @@
-cordic_cordic_phabkb
-cordic

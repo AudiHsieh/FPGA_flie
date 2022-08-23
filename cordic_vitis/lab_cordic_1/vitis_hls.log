@@ -1,9 +1,0 @@
-INFO: [HLS 200-10] Running 'D:/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'AudiHsieh' on host 'laptop-4ea331kj' (Windows NT_amd64 version 6.2) on Wed May 11 10:54:31 +0800 2022
-INFO: [HLS 200-10] In directory 'C:/Users/AudiHsieh/Desktop/FPGA/cordic/lab_cordic'
-Sourcing Tcl script 'tmp_script.tcl'
-INFO: [HLS 200-1510] Running: open_project -upgrade cordic_fp32 
-INFO: [HLS 200-1460] Upgrading and opening project 'C:/Users/AudiHsieh/Desktop/FPGA/cordic/lab_cordic/cordic_fp32'
-INFO: [HLS 200-1463] Upgrading solution 'solution1'
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
